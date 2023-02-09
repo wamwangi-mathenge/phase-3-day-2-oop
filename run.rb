@@ -4,9 +4,21 @@
 
 require 'pry'
 
+# Every time we call new, initialize is called
+# brianscar = car.new("Lexus", "LX570", "2020", "black", "15M", "diesel")
+
 class Cars
 
     attr_accessor :name, :model, :year, :color, :price, :fuel
+
+    def initialize(name, model, year, color, price, fuel)
+        @name = name
+        @model = model
+        @year = year
+        @color = color
+        @price = price
+        @fuel = fuel
+    end
 
 
     # Setter method for name instance variable
@@ -31,13 +43,13 @@ class Cars
     #     @model
     # end
 
-    # def accelerate(name)
-    #     puts "Vrooom!!! #{name}"
-    # end
+    def accelerate(name)
+        puts "Vrooom!!! #{name}"
+    end
 
 end
 
-brianscar = Cars.new # Instance method
+# brianscar = Cars.new # Instance method
 
 
 
