@@ -5,6 +5,15 @@
 require 'pry'
 
 class Cars
+
+    def accelerate
+        puts "Vrooom!!!"
+    end
+
 end
+
+brianscar = Cars.new
+
+brianscar.accelerate
 
 binding.pry
